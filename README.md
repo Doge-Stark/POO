@@ -1,3 +1,5 @@
+![GitHub License](https://img.shields.io/github/license/Doge-Stark/POO)
+
 # Atividades práticas da disciplina de Programação Orientada a Objetos.
 
 # Laboratórios
