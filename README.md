@@ -1,9 +1,8 @@
 # Atividades práticas da disciplina de Programação Orientada a Objetos.
 
 # Laboratórios
-[- Lab 01 - Sistema de controle de versão](aulas/2026-07-27)
+[- Lab 01 - Sistema de controle de versão](lab-01)
 
 
 # Aulas
-[- Aula 01 Introdução à linguagem Java](lab-01)
-
+[- Aula 01 Introdução à linguagem Java](aulas/2026-07-27)
