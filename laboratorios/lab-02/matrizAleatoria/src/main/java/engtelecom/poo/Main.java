@@ -1,4 +1,4 @@
-package engtelecon.poo;
+package engtelecom.poo;
 
 import java.util.Random;
 

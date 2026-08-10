@@ -10,16 +10,15 @@ public class Main {
 
         int aux = 0;
 
-        while(leitor.hasNext()){
+        while(leitor.hasNext()) {
             String linha = leitor.nextLine();
-            char dados[] =  linha.toCharArray();
+            char dados[] = linha.toCharArray();
 
             for (int j = 0; j < 9 && j < dados.length; j++) {
                 chars[aux][j] = dados[j];
             }
             aux++;
         }
-
         for(int i = 0; i < 9; i++){
             for(int j = 0; j < 9; j++){
                IO.print(chars[i][j]);
