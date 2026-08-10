@@ -1,8 +1,8 @@
 plugins {
-    id("java")
+    id("application")
 }
 
-group = "engtelecon.poo"
+group = "engtelecom.poo"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -17,4 +17,12 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.run.configure {
+    standardInput = System.`in`
+}
+
+application{
+    mainClass = "engtelecom.poo.Main"
 }
