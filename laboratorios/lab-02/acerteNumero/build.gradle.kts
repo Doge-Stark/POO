@@ -1,5 +1,5 @@
 plugins {
-    id("java")
+    id("application")
 }
 
 group = "engtelecon.poo"
@@ -17,4 +17,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application{
+    mainClass = "engtelecom.poo.Main"
 }
