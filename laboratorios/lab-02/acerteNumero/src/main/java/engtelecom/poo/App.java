@@ -8,7 +8,7 @@ public class App {
 
         Random r = new Random();
 
-        int sorteado = r.nextInt(100);
+        int sorteado = r.nextInt(1,101);
         int resposta;
         String ajuda;
         int contagem = 0;

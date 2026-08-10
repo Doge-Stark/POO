@@ -11,31 +11,30 @@ public class Main {
         int dimensao;
 
         IO.println("\n Bem-Vindo ao ASCII art\n");
-        IO.println("Opções disponiveis: Losango, Triângulo retângulo, Retângulo Vazado\n");
 
-        String forma = IO.readln("Entre com o formato: ");
+        String forma = args[0];
         forma.toLowerCase();
 
         switch (forma.toLowerCase()) {
 
-            case "retangulo vazado", "retângulo vazado":
-                largura = Integer.parseInt(IO.readln("Entre com a largura do " + forma + ": "));
-                altura = Integer.parseInt(IO.readln("Entre com a altura do " + forma + ": "));
+            case "retangulo", "retângulo":
+                largura = Integer.parseInt(args[1]);
+                altura = Integer.parseInt(args[2]);
 
                 IO.println("\nJava ASCIIart retângulo " + altura + " x " + largura + ".\n");
                 imprimeRetangulo(largura, altura);
 
                 break;
 
-            case "triângulo retângulo", "triangulo retangulo":
-                dimensao = Integer.parseInt(IO.readln("Entre com a dimensao do " + forma + ": "));
+            case "triângulo", "triangulo":
+                dimensao = Integer.parseInt(args[1]);
 
                 IO.println("\nJava ASCIIart triângulo " + dimensao + ".\n");
                 imprimeTriangulo(dimensao);
 
                 break;
             case "losango":
-                dimensao = Integer.parseInt(IO.readln("Entre com a dimensao do " + forma + ": "));
+                dimensao = Integer.parseInt(args[1]);
 
                 IO.println("\nJava ASCIIart losângulo " + dimensao + ".\n");
                 imprimelosango(dimensao);
@@ -45,7 +44,6 @@ public class Main {
                 IO.println("Opção de formato invalida!\n");
         }
         IO.print("\n");
-
 
     }
 
