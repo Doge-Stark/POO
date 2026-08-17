@@ -8,15 +8,44 @@ public class App {
 
         Carro fusca = new Carro();
         Carro ferrari = new Carro();
+        String cor;
+        fusca.definiCor(cor = IO.readln("Entre com a cor do Fusca: "));
+        ferrari.definiCor(cor = IO.readln("Entre com a cor da ferrari: "));
 
-        fusca.definiCor("azul");
-        IO.println(fusca.obterCor());
-        IO.println(ferrari.obterCor());
+        IO.println();
+        IO.println("Cor do Fusca:" + fusca.obterCor());
+        IO.println("Cor do Ferrari:" + ferrari.obterCor());
+        IO.println();
 
+        IO.println("----- TESTE DRIVE ( Fusca ) -----\n");
+
+        // Acelerando e alcançando a velocidade max;
+
+        IO.println("ACELERAÇÃO: \n");
         fusca.acelerar(10);
-        IO.println(fusca.mostrarVelocidade());
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.acelerar(20);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.acelerar(30);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.acelerar(40);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
         fusca.acelerar(100);
-        IO.println(fusca.mostrarVelocidade());
+
+        IO.println();
+
+        // Desaceleramdo até parar;
+
+        IO.println("DESACELERAÇÃO: \n");
+        fusca.freiar(10);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.freiar(20);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.freiar(30);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.freiar(40);
+        IO.println("Velocidade atual: " + fusca.mostrarVelocidade());
+        fusca.freiar(100);
 
     }
 }
