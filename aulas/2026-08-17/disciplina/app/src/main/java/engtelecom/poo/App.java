@@ -9,9 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         disciplina poo = new disciplina();
-        double notas[] = new double[3];
-        int presenca;
-
+        double[] notas = new double[3];
 
         poo.preencherName(IO.readln("\nInsira o nome da matéria: "));
 
@@ -21,7 +19,9 @@ public class App {
 
         poo.notas(notas);
 
-        poo.preencherFaltas(presenca = Integer.parseInt(IO.readln("Insira a quantidade de faltas: ")));
+        poo.preencherFaltas(Integer.parseInt(IO.readln("Insira a quantidade de faltas: ")));
+
+        poo.mediaFinal();
 
         IO.println("O aluno foi: " + poo.passou() + " na materia " + poo.informaNome());
         IO.println("Média final: " + poo.mediaFinal());

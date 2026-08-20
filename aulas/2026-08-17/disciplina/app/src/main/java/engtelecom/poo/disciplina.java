@@ -24,7 +24,7 @@ public class disciplina {
     }
 
     public double mediaFinal(){
-      return media = Math.round(prova1 + prova2 + prova3)/3;
+      return media = Math.round((prova1 + prova2 + prova3)/3);
     }
 
    public String passou() {
