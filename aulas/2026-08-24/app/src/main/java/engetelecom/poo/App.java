@@ -10,21 +10,22 @@ public class App {
 
     private int menu() {
 
-        IO.println(" 1 - Cadastrar.");
+        IO.println("\n 1 - Cadastrar.");
         IO.println(" 2 - Buscar dados.");
         IO.println(" 3 - Listar usuarios.");
         IO.println(" 4 - Sair");
 
-        return Integer.parseInt(IO.readln("\n\nEntre com a opção desejada: "));
+        return Integer.parseInt(IO.readln("\nEntre com a opção desejada: "));
     }
 
     private void cadastrar() {
-        String nome = IO.readln("Entre com o nome do usuario: ");
+        String nome = IO.readln("\nEntre com o nome do usuario: ");
         String email = IO.readln("Entre com o email do usuario: ");
         Pessoa cadastro = new Pessoa(nome, email);
         this.agenda[contador++] = cadastro;
 
     }
+
 
     public static void main(String[] args) {
 
@@ -39,17 +40,32 @@ public class App {
                     app.cadastrar();
                 }
                 case 2 -> {
-                }
-                case 3 -> {
+                    int tempID = Integer.parseInt(IO.readln("Digite o nome ID do usuario: "));
                     int i = 0;
-                    while ( app.agenda[i] != null) {
-
-
-
+                    while (app.agenda[i].getId() != tempID) {
                         i++;
                     }
+                    IO.println("\n-------------------------------");
+                    IO.println("Dados do usuario");
+                    IO.println(app.agenda[i].toString());
+                    IO.println("-------------------------------");
+                }
+                case 3 -> {
+                    IO.println("Usuarios cadastrados: ");
+                    IO.print("----------------------------------------------------------\n");
+                    IO.println("|    ID     |      NOME      |           EMAIL           |");
+                    IO.print("----------------------------------------------------------\n");
+                    int i = 0;
+                    while (app.agenda[i] != null) {
+
+                        String s = String.format("|   %05d   |   %s    |     %s     |\n", app.agenda[i].getId(), app.agenda[i].getNome(), app.agenda[i].getEmail());
+                        IO.print(s);
+                        i++;
+                    }
+
                 }
             }
         }
     }
 }
+

@@ -13,17 +13,22 @@ public class Pessoa {
         id = ++contador;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
-        sb.append("Id: ").append(id);
+        sb.append("\nID: ").append(id);
         sb.append("\nNome: ").append(nome);
         sb.append("\nEmail: ").append(email);
 
         return sb.toString();
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() { return nome; }
+
+    public String getEmail() { return email; }
 }
+
