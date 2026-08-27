@@ -26,7 +26,6 @@ public class App {
 
     }
 
-
     public static void main(String[] args) {
 
         App app = new App();
@@ -41,14 +40,15 @@ public class App {
                 }
                 case 2 -> {
                     int tempID = Integer.parseInt(IO.readln("Digite o nome ID do usuario: "));
-                    int i = 0;
-                    while (app.agenda[i].getId() != tempID) {
-                        i++;
+                    int num = 0;
+                    for (int i = 0; i < app.contador; i++) {
+                        if (tempID == app.agenda[i].getId()){
+                            IO.println("\n-------------------------------");
+                            IO.println("Dados do usuario");
+                            IO.println(app.agenda[num].toString());
+                            IO.println("-------------------------------");
+                        }
                     }
-                    IO.println("\n-------------------------------");
-                    IO.println("Dados do usuario");
-                    IO.println(app.agenda[i].toString());
-                    IO.println("-------------------------------");
                 }
                 case 3 -> {
                     IO.println("Usuarios cadastrados: ");
