@@ -7,11 +7,30 @@ public class App {
 
     public static void main(String[] args) {
 
-    Horario relogio = new Horario(100, 30, 20);
+        Horario relogio = new Horario(16,0 , 0);
+        Horario relogio2 = new Horario(22,45 , 41);
 
-    IO.println(relogio.toString());
+        IO.println(relogio.toString());
+        relogio.porExtenso();
 
+        relogio.setHora(12);
+        IO.println(relogio.toString());
+        relogio.porExtenso();
 
+        relogio.setHora(0);
+        IO.println(relogio.toString());
+        relogio.porExtenso();
 
+        relogio.setHora(1);
+        IO.println(relogio.toString());
+        relogio.porExtenso();
+
+        relogio.setHora(2);
+        IO.println(relogio.toString());
+        relogio.porExtenso();
+
+        IO.println(relogio.retornaTotalemSegundos() + " segundos");
+
+        IO.println("Diferença de " + relogio2.diferencaSegundos(relogio) + " segundos");
     }
 }
