@@ -7,5 +7,12 @@ public class App {
 
     public static void main(String[] args) {
 
+        Data data = new Data(2022,2,21);
+
+        IO.println(data.toString());
+
+        IO.println(data.dataPorExtenso());
+
+
     }
 }
