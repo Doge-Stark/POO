@@ -8,5 +8,31 @@ public class App {
 
     public static void main(String[] args) {
 
+        retangulo retangulo = new retangulo("ASCII",  10, 20);
+
+        IO.println(retangulo.getCode() + "\n" + retangulo.getLargura()+ "\n" + retangulo.getAltura());
+
+        IO.println("Área do retângulo: " + retangulo.retornaArea());
+        IO.println("Perímetro do retângulo: " + retangulo.retornaPerimetro());
+
+        retangulo.setLargura(10);
+        retangulo.setAltura(10);
+        retangulo.setCode("UTF8");
+
+        IO.println(retangulo.getCode() + "\n" + retangulo.getLargura()+ "\n" + retangulo.getAltura());
+
+        IO.println("Área do retângulo: " + retangulo.retornaArea());
+        IO.println("Perímetro do retângulo: " + retangulo.retornaPerimetro());
+
+
+        retangulo.setLargura(0);
+        retangulo.setAltura(0);
+        retangulo.setCode("batatinha");
+
+        IO.println(retangulo.getCode() + "\n" + retangulo.getLargura()+ "\n" + retangulo.getAltura());
+
+        IO.println("Área do retângulo: " + retangulo.retornaArea());
+        IO.println("Perímetro do retângulo: " + retangulo.retornaPerimetro());
+
     }
 }
