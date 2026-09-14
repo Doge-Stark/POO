@@ -3,10 +3,40 @@
  */
 package engtelecom.poo;
 
+import java.util.Random;
+
+import static engtelecom.poo.Robozinho.retornaTotalRobozinhos;
+
 public class App {
 
 
     public static void main(String[] args) {
+
+        Robozinho robo = new Robozinho("SHELBY");
+
+        IO.println();
+        if (robo.informaEstado()) {
+            IO.println("Robozinho ligado\n");
+        } else {
+            IO.println("Robozinho desligado\n");
+        }
+
+        IO.println("Total de robos instanciados: " + retornaTotalRobozinhos());
+
+        robo.ligarDesligar();
+
+        IO.println();
+        if (robo.informaEstado()) {
+            IO.println("Robozinho ligado\n");
+        } else {
+            IO.println("Robozinho desligado\n");
+        }
+
+        Robozinho robo2 = new Robozinho("TERRY");
+        Robozinho robo3 = new Robozinho("MELBY");
+        Robozinho robo4 = new Robozinho("TOM");
+
+        IO.println("Total de robos instanciados: " + retornaTotalRobozinhos());
 
     }
 }
