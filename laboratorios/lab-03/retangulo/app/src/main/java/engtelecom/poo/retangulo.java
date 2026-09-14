@@ -6,8 +6,8 @@ public class retangulo {
     private int altura;
     private String code;
 
-    private static final int ALTURA_MIN = 1;
-    private static final int LARGURA_MIN = 1;
+    private static final int ALTURA_MIN = 2;
+    private static final int LARGURA_MIN = 2;
 
 
     public retangulo() {
@@ -78,12 +78,33 @@ public class retangulo {
 
     }
 
-//    @Override
-//    public String toString() {
-//        if (code == "ASCII") {
-//
-//        }else if (code == "UTF8") {
-//
-//        }
-//    }
-}
+
+    @Override public String toString() {
+
+        String ces = code == "ASCII" ? "\u250c" : "+";
+        String csd = code == "ASCII" ? "\u2510" : "+";
+        String linha = code == "ASCII" ? "\u2500" : "-";
+        String reta = code == "ASCII" ? "\u2502" : "|";
+        String cei = code == "ASCII" ? "\u2514" : "+";
+        String cdi = code == "ASCII" ? "\u2518" : "+";
+
+    final StringBuilder sb = new StringBuilder(ces);
+        for (int i = 0; i < largura-2; i++) {
+            sb.append(linha);
+        }
+        sb.append(csd).append("\n");
+        for (int i = 0; i <altura-2; i++) {
+            sb.append(reta);
+            for (int j = 0; j < largura -2; j++) {
+                sb.append(" ");
+            }
+            sb.append(reta).append("\n");
+        }
+        sb.append(cei);
+        for (int i = 0; i < largura-2; i++) {
+            sb.append(linha);
+        }
+        sb.append(cdi);
+
+    return sb.toString();
+}}

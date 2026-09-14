@@ -15,6 +15,8 @@ public class App {
         IO.println("Área do retângulo: " + retangulo.retornaArea());
         IO.println("Perímetro do retângulo: " + retangulo.retornaPerimetro());
 
+        IO.println(retangulo.toString());
+
         retangulo.setLargura(10);
         retangulo.setAltura(10);
         retangulo.setCode("UTF8");
@@ -33,6 +35,8 @@ public class App {
 
         IO.println("Área do retângulo: " + retangulo.retornaArea());
         IO.println("Perímetro do retângulo: " + retangulo.retornaPerimetro());
+
+        IO.println(retangulo.toString());
 
     }
 }
