@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e31ed7bf-90bb-4126-b599-c1bd931ddf0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/Livro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +18,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cadastroLivros" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -39,10 +45,81 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1" javaHome="/usr/java/jdk-25-oracle-x64" gradleVersion="9.2.1" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Doge-Stark"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Doge-Stark/POO",
+    "accountId": "c3b69f33-d275-4363-a6a0-40a6f208ac07"
+  }
+}]]></component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1" javaHome="/usr/java/jdk-25-oracle-x64" gradleVersion="9.2.1" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001603709823" />
+      <entry key="S10" value="1.0006695328828712" />
+      <entry key="S30" value="1.2585433080164208" />
+      <entry key="S60" value="2.2747855149070038" />
+      <entry key="M2" value="4.492113326766255" />
+      <entry key="M5" value="12.098094600698394" />
+      <entry key="M10" value="23.473837641820207" />
+      <entry key="M15" value="32.875424034296216" />
+      <entry key="M30" value="56.20793803356488" />
+      <entry key="H1" value="85.23730227590278" />
+      <entry key="H2" value="110.36395372232802" />
+      <entry key="H4" value="127.24918506348031" />
+      <entry key="D1" value="144.2342662354925" />
+      <entry key="W1" value="147.45394662398485" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.7837671618716484E-69" />
+      <entry key="S2" value="7.263705484140776E-18" />
+      <entry key="S5" value="1.3946437687484728E-7" />
+      <entry key="S10" value="3.7344929625808873E-4" />
+      <entry key="S30" value="0.07202836415737834" />
+      <entry key="S60" value="0.27594900707787257" />
+      <entry key="M2" value="0.7167852051358279" />
+      <entry key="M5" value="2.4106060235828197" />
+      <entry key="M10" value="4.635109749338844" />
+      <entry key="M15" value="6.178526921026896" />
+      <entry key="M30" value="9.234724039323105" />
+      <entry key="H1" value="12.480664080699658" />
+      <entry key="H2" value="15.132874408057017" />
+      <entry key="H4" value="16.87832390138358" />
+      <entry key="D1" value="18.61642496522408" />
+      <entry key="W1" value="18.944413633966814" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.1817465646650388" />
+      <entry key="MS500" value="0.7110387052936373" />
+      <entry key="S2" value="0.9182761623009238" />
+      <entry key="S5" value="0.9664723895169834" />
+      <entry key="S10" value="0.9841058297955155" />
+      <entry key="S30" value="1.3214038666415953" />
+      <entry key="S60" value="2.538935766796294" />
+      <entry key="M2" value="5.189399178162426" />
+      <entry key="M5" value="14.471750172773405" />
+      <entry key="M10" value="28.069889360752295" />
+      <entry key="M15" value="39.01827231477739" />
+      <entry key="M30" value="65.41496173500934" />
+      <entry key="H1" value="97.69873963679987" />
+      <entry key="H2" value="125.48500549196504" />
+      <entry key="H4" value="144.12087094878527" />
+      <entry key="D1" value="162.8494644352273" />
+      <entry key="W1" value="166.39818176275665" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3JeKx4OpQ5bOUebeVLrE5U6aktZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,10 +135,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/aluno/IdeaProjects/POO/laboratorios/lab-04/cadastroLivros",
+    "last_opened_file_path": "C:/Users/Doge Stark/IdeaProjects/POO/laboratorios/lab-04/cadastroLivros",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,8 +173,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
       </set>
     </attachedChunks>
   </component>

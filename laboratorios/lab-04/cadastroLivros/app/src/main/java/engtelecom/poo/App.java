@@ -10,89 +10,167 @@ public class App {
     HashMap<String, Livro> estante = new HashMap<>();
 
     public void cadastrar() {
-
-
+        IO.println();
+        IO.println("-----------------------------------------------");
+        IO.println();
         String isbn = IO.readln("Entre com o ISBN: ");
         if (!estante.containsKey(isbn)) {
+
             String nome = IO.readln("Entre com o nome do livro: ");
             String autor = IO.readln("Entre com o nome do autor: ");
             int ano = Integer.parseInt(IO.readln("Entre com o ano de publicação: "));
+            IO.println();
+            IO.println("Livro cadastrado com sucesso!\n");
             Livro novo = new Livro(isbn, nome, autor, ano);
             this.estante.put(isbn, novo);
         } else {
-            IO.println("ISBN já cadastrado!");
+            IO.println("\nISBN já cadastrado!\n");
         }
     }
 
     public void listarCadastrados() {
 
+        IO.println();
+        IO.println("-----------------------------------------------");
+        IO.println("\nRESULTADOS POR BUSCA GERAL: \n");
+
+
         estante.forEach((isbn, nome) -> {
             IO.print("ISBN: " + isbn);
-            IO.print(" |   Título: " + nome.getTitulo());
+            IO.print(" | Título: " + nome.getTitulo());
             IO.print("\n");
         });
+        IO.println();
     }
 
     public void consultarLivroIsbn() {
+        IO.println();
+        IO.println("-----------------------------------------------\n");
         String isbn = IO.readln("Entre com a ISBN do livro: ");
         Livro livro = estante.get(isbn);
         if (livro != null) {
+            IO.println("\nRESULTADOS POR ESPECÍFICA ( ISBN ): \n");
             IO.print(livro);
         }
+        IO.println();
     }
 
     public void consultarLivroAutor() {
+        IO.println();
+        IO.println("-----------------------------------------------\n");
         String autor = IO.readln("Entre com a nome do autor: ");
+
+        IO.println("\nRESULTADOS POR ESPECÍFICA ( AUTOR ): \n");
         for (Livro livro : estante.values()) {
             if (livro.getAutor().equals(autor)) {
+                IO.print("ISBN: " + livro.getIsbn());
+                IO.print("  |  Título: " + livro.getTitulo() + "\n");
+            }
+        }
+        IO.println();
+    }
+
+    public void consultarLivroAno() {
+        IO.println();
+        IO.println("-----------------------------------------------\n");
+        int ano = Integer.parseInt(IO.readln("Entre com o ano de publicação: "));
+        IO.println("\nRESULTADOS POR ESPECÍFICA ( ANO ): \n");
+        for (Livro livro : estante.values()) {
+            if (livro.getAno() == ano) {
 
                 IO.print("ISBN: " + livro.getIsbn());
-                IO.print("  |  Título: " + livro.getTitulo());
+                IO.print("  |  Título: " + livro.getTitulo() + "\n");
+            }
+        }
+        IO.println();
+    }
+
+    public void atualizarLivro() {
+        IO.println();
+        IO.println("-----------------------------------------------\n");
+        String ISBN = IO.readln("Entre com o ISBN do livro: ");
+        for (Livro livro : estante.values()) {
+            if (livro.getIsbn().equals(ISBN)) {
+                String novoTitulo = IO.readln("Entre com o novo titulo do livro: ");
+                String novoAutor = IO.readln("Entre com o novo autor do livro: ");
+                int novoAno = Integer.parseInt(IO.readln("Entre com o novo ano de publicação: "));
+                livro.setTitulo(novoTitulo);
+                livro.setAutor(novoAutor);
+                livro.setAno(novoAno);
+                IO.println("\nDados do livro de ISBN: " + ISBN + " atualizado com sucesso!\n");
             }
         }
     }
 
-    public static void main(String[] args) {
-        App app = new App();
+    public void excluirLivro() {
+        IO.println();
+        IO.println("-----------------------------------------------\n");
+        String ISBN = IO.readln("Entre com o ISBN do livro: ");
 
-//        app.cadastrar();
-//        app.listarCadastrados();
-//        app.consultarLivroIsbn();
-
-        Livro l = new Livro("1234567890123", "titulo", "autor", 2026);
-
-        IO.println(l);
-
-
+        Livro removido = estante.remove(ISBN);
+        if (removido != null) {
+            IO.println("\nLivro excluido com sucesso!\n");
+        } else {
+            IO.println("\nLivro não encontrado.\n");
+        }
     }
 
+    private String interfaceTexto(){
+        String menu = """
+            -----------------------------------------------
+                         ESTANTE DE LIVROS
+            -----------------------------------------------
+            
+            1 - Cadastrar livro
+            2 - Lista geral de livros
+            3 - Consultar livro POR ISBN.
+            4 - Consultar livros por autor.
+            5 - Consultar livros por ano.
+            6 - Atualizar dados.
+            7 - Excluir livro
+            8 - Sair.
+            
+            -----------------------------------------------
+            """;
 
-//    public void interface()
-//
-//    {
-//
-//        int escolha = 0;
-//        switch (escolha) {
-//            case 1:
-//                break;
-//            case 2:
-//                break;
-//            case 3:
-//                break;
-//            case 4:
-//                break;
-//            case 5:
-//                break;
-//            case 6:
-//                break;
-//            case 7:
-//                break;
-//            case 8:
-//                break;
-//            case 9:
-//                break;
-//            default:
-//                IO.print("Escolha invalida!!");
-//        }
-//    }
+        return menu;
+    }
+
+    private int runInterface() {
+        IO.println();
+
+        int escolha = 0;
+
+        while (escolha != 8) {
+            IO.println(interfaceTexto());
+            escolha = Integer.parseInt(IO.readln("Entre com a opção desejada: "));
+            switch (escolha) {
+                case 1: cadastrar();
+                    break;
+                case 2: listarCadastrados();
+                    break;
+                case 3: consultarLivroIsbn();
+                    break;
+                case 4: consultarLivroAutor();
+                    break;
+                case 5: consultarLivroAno();
+                    break;
+                case 6: atualizarLivro();
+                    break;
+                case 7: excluirLivro();
+                    break;
+                case 8: return 0;
+                default:
+                    IO.print("Escolha invalida!!");
+            }
+        }
+        return 0;
+    }
+
+    public void main(String[] args) {
+        App app = new App();
+        app.runInterface();
+    }
 }
+
+
