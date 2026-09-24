@@ -3,10 +3,17 @@
  */
 package poo.engtelecom;
 
+import net.datafaker.Faker;
+
 public class App {
     public static void main(String[] args) {
 
-    Aluno a1 = new Aluno("pedro", new Endereco("bananeira", "campinas", 92, 99101360),1123123123);
+        Faker faker = new Faker();
+        String nome = faker.name().firstName();
+        String rua = faker.address().streetAddress();
+        String cep = faker.address().zipCode();
+
+    Aluno a1 = new Aluno(nome, new Endereco(rua, "campinas", 92, cep),1123123123);
 
     IO.println(a1);
 
