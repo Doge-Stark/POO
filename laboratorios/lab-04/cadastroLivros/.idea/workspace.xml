@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e31ed7bf-90bb-4126-b599-c1bd931ddf0c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/engtelecom/poo/App.java" afterDir="false" />
+    <list default="true" id="e31ed7bf-90bb-4126-b599-c1bd931ddf0c" name="Changes" comment="Lab 04 - Exercício concluído">
+      <change beforePath="$PROJECT_DIR$/../../../aulas/2026-10-05/exercicio-1/app/src/test/java/engetelecom/poo/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../aulas/2026-10-05/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,76 +45,76 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Doge-Stark"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Doge-Stark&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Doge-Stark/POO",
-    "accountId": "c3b69f33-d275-4363-a6a0-40a6f208ac07"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Doge-Stark/POO&quot;,
+    &quot;accountId&quot;: &quot;c3b69f33-d275-4363-a6a0-40a6f208ac07&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1" javaHome="/usr/java/jdk-25-oracle-x64" gradleVersion="9.2.1" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000001603709823" />
-      <entry key="S10" value="1.0006695328828712" />
-      <entry key="S30" value="1.2585433080164208" />
-      <entry key="S60" value="2.2747855149070038" />
-      <entry key="M2" value="4.492113326766255" />
-      <entry key="M5" value="12.098094600698394" />
-      <entry key="M10" value="23.473837641820207" />
-      <entry key="M15" value="32.875424034296216" />
-      <entry key="M30" value="56.20793803356488" />
-      <entry key="H1" value="85.23730227590278" />
-      <entry key="H2" value="110.36395372232802" />
-      <entry key="H4" value="127.24918506348031" />
-      <entry key="D1" value="144.2342662354925" />
-      <entry key="W1" value="147.45394662398485" />
+      <entry key="S2" value="1.0000003682440395" />
+      <entry key="S5" value="1.0050919571338546" />
+      <entry key="S10" value="1.1233158585129568" />
+      <entry key="S30" value="2.0349737601217095" />
+      <entry key="S60" value="2.786266202704012" />
+      <entry key="M2" value="3.7644387100942365" />
+      <entry key="M5" value="8.582255928376673" />
+      <entry key="M10" value="18.76101449836061" />
+      <entry key="M15" value="28.194710050517447" />
+      <entry key="M30" value="52.27079584795488" />
+      <entry key="H1" value="83.00683897067323" />
+      <entry key="H2" value="110.25840546485504" />
+      <entry key="H4" value="128.8610687151799" />
+      <entry key="D1" value="147.77971761460057" />
+      <entry key="W1" value="151.38747569090532" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.7837671618716484E-69" />
-      <entry key="S2" value="7.263705484140776E-18" />
-      <entry key="S5" value="1.3946437687484728E-7" />
-      <entry key="S10" value="3.7344929625808873E-4" />
-      <entry key="S30" value="0.07202836415737834" />
-      <entry key="S60" value="0.27594900707787257" />
-      <entry key="M2" value="0.7167852051358279" />
-      <entry key="M5" value="2.4106060235828197" />
-      <entry key="M10" value="4.635109749338844" />
-      <entry key="M15" value="6.178526921026896" />
-      <entry key="M30" value="9.234724039323105" />
-      <entry key="H1" value="12.480664080699658" />
-      <entry key="H2" value="15.132874408057017" />
-      <entry key="H4" value="16.87832390138358" />
-      <entry key="D1" value="18.61642496522408" />
-      <entry key="W1" value="18.944413633966814" />
+      <entry key="MS500" value="1.3967452757620267E-305" />
+      <entry key="S2" value="6.113350593414779E-77" />
+      <entry key="S5" value="3.2697287133896E-31" />
+      <entry key="S10" value="5.71815417194106E-16" />
+      <entry key="S30" value="8.301915143079281E-6" />
+      <entry key="S60" value="0.0029625535205764103" />
+      <entry key="M2" value="0.07426902409312298" />
+      <entry key="M5" value="0.973405310561769" />
+      <entry key="M10" value="2.9453964474993555" />
+      <entry key="M15" value="4.566752073141625" />
+      <entry key="M30" value="7.939354016678935" />
+      <entry key="H1" value="11.572263582497195" />
+      <entry key="H2" value="14.571750922731603" />
+      <entry key="H4" value="16.56244589678633" />
+      <entry key="D1" value="18.557899145032543" />
+      <entry key="W1" value="18.935894013727584" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.1817465646650388" />
-      <entry key="MS500" value="0.7110387052936373" />
-      <entry key="S2" value="0.9182761623009238" />
-      <entry key="S5" value="0.9664723895169834" />
-      <entry key="S10" value="0.9841058297955155" />
-      <entry key="S30" value="1.3214038666415953" />
-      <entry key="S60" value="2.538935766796294" />
-      <entry key="M2" value="5.189399178162426" />
-      <entry key="M5" value="14.471750172773405" />
-      <entry key="M10" value="28.069889360752295" />
-      <entry key="M15" value="39.01827231477739" />
-      <entry key="M30" value="65.41496173500934" />
-      <entry key="H1" value="97.69873963679987" />
-      <entry key="H2" value="125.48500549196504" />
-      <entry key="H4" value="144.12087094878527" />
-      <entry key="D1" value="162.8494644352273" />
-      <entry key="W1" value="166.39818176275665" />
+      <entry key="MS100" value="0.9659363289248456" />
+      <entry key="MS500" value="0.9930924954370359" />
+      <entry key="S2" value="0.9982689999717588" />
+      <entry key="S5" value="1.0043937489003396" />
+      <entry key="S10" value="1.1229030724458218" />
+      <entry key="S30" value="2.034676182559309" />
+      <entry key="S60" value="2.7888823365838897" />
+      <entry key="M2" value="3.836552484347501" />
+      <entry key="M5" value="9.540679254116654" />
+      <entry key="M10" value="21.681559334720053" />
+      <entry key="M15" value="32.73506918503515" />
+      <entry key="M30" value="60.18632409572114" />
+      <entry key="H1" value="94.56126970054976" />
+      <entry key="H2" value="124.81876934834939" />
+      <entry key="H4" value="145.4169994330894" />
+      <entry key="D1" value="166.33639361823475" />
+      <entry key="W1" value="170.3231912564754" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -128,28 +128,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.cadastroLivros [:app:engtelecom.poo.App.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Doge Stark/IdeaProjects/POO/laboratorios/lab-04/cadastroLivros",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.cadastroLivros [:app:engtelecom.poo.App.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Doge Stark/IdeaProjects/POO/laboratorios/lab-04/cadastroLivros&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engtelecom.poo.App" />
@@ -191,5 +191,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab 04 - Exercício concluído" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 04 - Exercício concluído" />
   </component>
 </project>
