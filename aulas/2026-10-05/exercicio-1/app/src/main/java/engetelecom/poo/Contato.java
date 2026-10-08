@@ -1,6 +1,7 @@
 package engetelecom.poo;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
 public class Contato {
@@ -11,7 +12,7 @@ public class Contato {
     private HashMap<String, Telefone> telefones;
     private HashMap<String, Email> emails;
 
-    public Contato(String nome, String sobrenome, LocalDate dataNasc, String rotuloEmail, String email, String rotuloTelefone, String telefone) {
+    public Contato(String nome, String sobrenome, LocalDate dataNasc) {
 
         this.nome = nome;
         this.sobrenome = sobrenome;
@@ -19,9 +20,6 @@ public class Contato {
 
         this.telefones = new HashMap<String,Telefone>();
         this.emails = new HashMap<String,Email>();
-
-        this.emails.put(rotuloEmail, new Email(email));
-        this.telefones.put(rotuloTelefone, new Telefone(telefone));
 
     }
 
@@ -49,61 +47,71 @@ public class Contato {
         this.dataNasc = dataNasc;
     }
 
-    public HashMap<String, Telefone> getTelefones() {
-        return telefones;
-    }
-
     public boolean addTelefone(String rotulo, String telefone){
 
+        if(telefones.containsKey(rotulo)){
+            return false;
+        }
         telefones.put(rotulo, new Telefone(telefone));
         return true;
 
     }
 
-    public HashMap<String, Email> getEmails() {
-        return emails;
-    }
-
     public boolean addEmail(String rotulo, String email){
 
-        telefones.put(rotulo, new Telefone(email));
+        if(emails.containsKey(rotulo)){
+            return false;
+        }
+        emails.put(rotulo, new Email(email));
         return true;
 
     }
 
-    public boolean updateEmail(String rotulo, String novoEmail, int indiceContatoNaLista){
+    public boolean updateEmail(String rotulo, String novoEmail){
 
-        emails.replace(rotulo, new Email(novoEmail));
-        return true;
+        Email email1 = emails.get(rotulo);
+        if( email1 != null) { email1.setValor(novoEmail);
+            return true;
+        }
+        return false;
     }
 
-    public boolean updateTelefone(String rotulo, String novoTelefone, int indiceContatoNaLista){
+    public boolean updateTelefone(String rotulo, String novoTelefone){
 
-        telefones.replace(rotulo, new Telefone(novoTelefone));
-        return true;
+        Telefone tel1 = telefones.get(rotulo);
+        if( tel1 != null) { tel1.setValor(novoTelefone);
+            return true;
+        }
+        return false;
     }
 
-    public boolean removeTelefone(String rotulo, int indiceContatoNaLista){
+    public boolean removeTelefone(String rotulo){
 
-        telefones.remove(rotulo, indiceContatoNaLista);
-        return true;
+        return telefones.remove(rotulo) != null;
     }
 
-    public boolean removeEmail(String rotulo, int indiceContatoNaLista){
+    public boolean removeEmail(String rotulo){
 
-        telefones.remove(rotulo, indiceContatoNaLista);
-        return true;
+        return emails.remove(rotulo) != null;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Contato{");
-        sb.append("nome='").append(nome).append('\'');
-        sb.append(", sobrenome='").append(sobrenome).append('\'');
-        sb.append(", dataNasc=").append(dataNasc);
-        sb.append(", telefones=").append(telefones);
-        sb.append(", emails=").append(emails);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder();
+        sb.append("• Nome: ").append(nome ).append(" ").append(sobrenome).append("\n");
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        sb.append("• Data de nascimento: ").append(dataNasc.format(formato)).append("\n");
+
+        if(telefones.size() > 0) {
+            sb.append(" Telefones:").append("\n");
+            telefones.forEach(((rotulo, telefone) -> sb.append("    - ").append(rotulo).append(" -> ").append(telefone)));
+        }
+
+        if(emails.size() > 0) {
+            sb.append(" Emails:").append("\n");
+            emails.forEach(((rotulo, e) -> sb.append("    - ").append(rotulo).append(" -> ").append(e)));
+        }
         return sb.toString();
+
     }
 }

@@ -1,5 +1,8 @@
 package engetelecom.poo;
 
+import javax.swing.text.MaskFormatter;
+import java.text.ParseException;
+
 public class Telefone {
 
    private String valor;
@@ -18,9 +21,24 @@ public class Telefone {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Telefone{");
-        sb.append("valor='").append(valor).append('\'');
-        sb.append('}');
+
+        final StringBuilder sb = new StringBuilder();
+        sb.append(formata("+## (##) #####-####", valor)).append("\n");
         return sb.toString();
     }
+
+    public String formata(String mascara, String valor){
+        MaskFormatter mask = null;
+        String resultado = "";
+        try {
+            mask = new MaskFormatter(mascara);
+            mask.setValueContainsLiteralCharacters(false);
+            mask.setPlaceholderCharacter('_');
+            resultado = mask.valueToString(valor);
+        } catch (ParseException e) {
+            System.err.println("erro: " + e.getMessage());
+        }
+        return resultado;
+    }
+
 }

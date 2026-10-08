@@ -5,7 +5,8 @@ public class Email {
     private String valor;
 
     public Email(String valor) {
-        this.valor = valor;
+        this.valor = "";
+        this.setValor(valor);
     }
 
     public String getValor() {
@@ -13,14 +14,17 @@ public class Email {
     }
 
     public void setValor(String valor) {
-        this.valor = valor;
+
+        String eR = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
+        if(valor.matches(eR)){ this.valor = valor;}
+
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Email{");
-        sb.append("valor='").append(valor).append('\'');
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder();
+        sb.append(valor).append("\n");
         return sb.toString();
     }
 }
+

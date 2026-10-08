@@ -6,20 +6,21 @@ public class Agenda {
 
     private ArrayList<Contato> contatos;
 
-    public Agenda(ArrayList<Contato> contatos) {
-
-        ArrayList<Contato> contatos1 = new ArrayList<>();
+    public Agenda() {
+        this.contatos = new ArrayList<>();
     }
 
     public boolean addContato(Contato contato) {
 
         contatos.add(contato);
         return true;
+
     }
 
-    public boolean removeContato(Contato contato) {
-        contatos.remove(contato);
-        return true;
+    public boolean removeContato(int indiceDoContato){
+
+        return this.contatos.remove(indiceDoContato) != null;
+
     }
 
     public ArrayList<Contato> findContato(String nome, String sobreNome){
@@ -39,33 +40,26 @@ public class Agenda {
 
     public boolean addTelefone(String rotulo, String telefone, int indiceContatoNaLista){
 
-        contatos.get(indiceContatoNaLista).getTelefones().put(rotulo, new Telefone(telefone));
-        return true;
+        return contatos.get(indiceContatoNaLista).addTelefone(rotulo, telefone);
     }
 
     public boolean addEmail(String rotulo, String email, int indiceContatoNaLista){
 
-        contatos.get(indiceContatoNaLista).getEmails().put(rotulo, new Email(email));
-        return true;
+        return contatos.get(indiceContatoNaLista).addEmail(rotulo, email);
     }
 
     public boolean removeTelefone(String rotulo, int indiceContatoNaLista){
 
-        contatos.get(indiceContatoNaLista).getTelefones().remove(rotulo);
-        return true;
-    }
+        return contatos.get(indiceContatoNaLista).removeTelefone(rotulo);
 
-    public boolean addEmail(String rotulo, int indiceContatoNaLista){
-
-        contatos.get(indiceContatoNaLista).getEmails().remove(rotulo);
-        return true;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Agenda{");
-        sb.append("contatos=").append(contatos);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("\n================== Agenda ===================\n\n");
+
+        contatos.forEach(((c) -> sb.append(c).append("\n").append("---------------------------------------------\n\n")));
+        sb.append("=============================================");
         return sb.toString();
     }
 }
