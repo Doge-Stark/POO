@@ -54,12 +54,31 @@ public class Agenda {
 
     }
 
+    public boolean removeEmail(String rotulo, int indiceContatoNaLista){
+
+        return contatos.get(indiceContatoNaLista).removeEmail(rotulo);
+
+    }
+
+    public boolean updateTelefone(String rotulo, String telefone, int indiceContatoNaLista){
+
+
+        return contatos.get(indiceContatoNaLista).updateTelefone(rotulo,telefone);
+
+    }
+
+    public boolean updateEmail(String rotulo, String email, int indiceContatoNaLista){
+
+
+        return contatos.get(indiceContatoNaLista).updateEmail(rotulo, email);
+
+    }
+
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("\n================== Agenda ===================\n\n");
+        final StringBuilder sb = new StringBuilder("\n-------------- CONTATOS ----------------\n\n");
 
-        contatos.forEach(((c) -> sb.append(c).append("\n").append("---------------------------------------------\n\n")));
-        sb.append("=============================================");
+        contatos.forEach(((c) -> sb.append(c).append("\n").append("----------------------------------------\n\n")));
         return sb.toString();
     }
 }
