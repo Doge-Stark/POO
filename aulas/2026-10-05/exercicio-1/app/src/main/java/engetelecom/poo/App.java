@@ -1,31 +1,20 @@
 
 package engetelecom.poo;
-
+import java.time.Clock;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class App {
     Agenda nova = new Agenda();
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         App app = new App();
         app.interfaceAgenda();
 
-//        nova.addContato(new Contato("Pedro", "Inácio",  LocalDate.of(2004,5,9)));
-//
-//        nova.addContato(new Contato("João", "Heitor",  LocalDate.of(2004,3,9)));
-//        nova.addTelefone("Casa","5548984192831",0);
-//        nova.addTelefone("Casa","5548909090909",1);
-//
-//        nova.addEmail("Pessoal", "Pedro.i09@aluno.ifsc.edu.br",0);
-//        nova.addEmail("Pessoal", "Joao.h09@aluno.ifsc.edu.br",1);
-
-//        IO.print(nova);
 
     }
 
-    public int interfaceAgenda() {
+    public int interfaceAgenda() throws InterruptedException {
         int i = 0;
         while (i != 11) {
             IO.println(
@@ -72,9 +61,11 @@ public class App {
                     break;
                 case 10: listarContatos(nova);
                     break;
+                case 11: saida(); return 0;
                     default: IO.println("\nOpção invalida!!!\n");
             }
         }
+
         return 0;
     }
 
@@ -167,4 +158,20 @@ public class App {
 
         IO.println(nova);
     }
+
+    void saida() throws InterruptedException {
+        for (int i = 0; i < 4; i++) {
+            IO.print("\rSaindo.   ");
+            Thread.sleep(500);
+
+            IO.print("\rSaindo..  ");
+            Thread.sleep(500);
+
+            IO.print("\rSaindo...");
+            Thread.sleep(500);
+        }
+        IO.print("\n".repeat(30));
+        IO.println("\nPrograma encerrado!");
+    }
+
 }
