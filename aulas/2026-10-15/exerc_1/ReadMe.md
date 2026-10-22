@@ -53,3 +53,125 @@
         Disciplina "1" --o "0..*" Professor
 
 ```
+
+
+```mermaid
+    classDiagram
+         
+        class livro{
+            - autor: String
+            - isbn: int
+        }
+        
+        class revista{
+            - tema: String
+        }
+        
+        class jornal{
+            - materia: String
+            
+        }
+        
+        class gibi{
+            - ilustrador: String
+        }
+        
+        class obra{
+            - titulo
+        }
+        
+        class periodico{
+            -issn: String
+        }
+
+        obra <|-- periodico
+        periodico <|-- jornal
+        obra <|-- livro
+        periodico <|-- gibi
+        periodico <|-- revista
+
+```
+
+```mermaid
+classDiagram
+    
+    class gato{
+        + miar()
+        }
+    
+    class cachorro{
+        + latir()
+         }
+         
+    class arara{
+        + falar()
+         }
+    
+    class galinha{
+        + cacarejar()
+    }
+    
+    class baleia{
+        
+        + respirar()
+        
+    }
+    
+    class tubarao{
+        + 
+    }
+    
+    class aquatico{
+        
+        + nadar()
+    }
+    
+    class terrestre{
+        
+        + andar()
+    }
+    
+    class aereo{
+        
+        + voar()
+    }
+    
+    class animal{
+        + comer()
+        + reproduzir()
+    }
+    
+    class mamifero{
+        
+        + gestar()
+        + mamar()
+    }
+    
+    class oviparo{
+        + porOvos()
+    }
+    
+    
+    gato --|> terrestre
+    cachorro --|> terrestre
+    aereo --|> terrestre
+    galinha --|> aereo
+    arara --|> aereo
+    tubarao --|> aquatico
+    baleia --|> aquatico
+    aquatico --|> animal
+    terrestre --|> mamifero
+    mamifero --|> animal
+    oviparo --|> animal
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+```
