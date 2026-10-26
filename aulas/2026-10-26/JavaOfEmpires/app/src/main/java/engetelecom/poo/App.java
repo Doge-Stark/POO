@@ -12,18 +12,18 @@ public class App {
     public static void main(String[] args) {
        Aldeao cleber = new Aldeao();
 
-       cleber.atacar();
-       cleber.mover();
+       IO.println(cleber.atacar());
+       IO.println(cleber.mover());
 
        Arqueiro robinWood = new Arqueiro();
 
-       robinWood.atacar();
-       robinWood.mover();
+       IO.println(robinWood.atacar());
+       IO.println(robinWood.mover());
 
        Cavaleiro lancelot = new Cavaleiro();
 
-       lancelot.atacar();
-       lancelot.mover();
+       IO.println(lancelot.atacar());
+       IO.println(lancelot.mover());
 
     }
 }

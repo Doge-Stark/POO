@@ -6,18 +6,20 @@ public class Personagem {
     protected int vida;
     protected double velocidade;
 
-    public Personagem() {
-        this.ataque = 0;
-        this.vida = 0;
-        this.velocidade = 0;
+    public Personagem(int ataque, int vida, double velocidade) {
+        this.ataque = ataque;
+        this.vida = vida;
+        this.velocidade = velocidade;
     }
 
     public String atacar(){
-        return "\nacerta com" + ataque + " de ataque!!";
+        String bater = "acerta com " + ataque + " de ataque!!";
+        return bater;
     }
 
     public String mover(){
-        return "\nMove-se com" + velocidade + " de velocidade!";
+        String andar = "Move-se com " + velocidade + " de velocidade!";
+        return andar;
 
     }
 }

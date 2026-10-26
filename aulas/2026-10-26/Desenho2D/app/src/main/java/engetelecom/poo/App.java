@@ -3,12 +3,31 @@
  */
 package engetelecom.poo;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import engetelecom.poo.desenhos.Circulo;
+import engetelecom.poo.desenhos.Coordenada;
+import engetelecom.poo.desenhos.Linha;
+import engetelecom.poo.desenhos.Retangulo;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Linha linha = new Linha("Vermelho", new Coordenada(1, 1),new Coordenada(5,5));
+
+        IO.println(linha.desenhar());
+
+        Circulo circulo = new Circulo("Azul", new Coordenada(1,1), 10);
+
+        IO.println(circulo.desenhar());
+        IO.println("Área: " + circulo.calculaArea());
+        IO.println("Diametro " + circulo.calculaDiametro());
+        IO.println("Perimetro " + circulo.calcularPerimetro());
+
+        Retangulo retangulo = new Retangulo("Laranja", new Coordenada(1,1),new Coordenada(2,2));
+
+        IO.println(retangulo.desenhar());
+        IO.println("Área " + retangulo.calculaArea());
+        IO.println("Perimetro " + retangulo.calculaPerimetro());
+
+
     }
 }

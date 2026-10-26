@@ -5,19 +5,16 @@ package engetelecom.poo.status;
 public class Aldeao extends Personagem {
 
     public Aldeao() {
-        super();
-        ataque = 1;
-        velocidade = 0.8;
-        vida = 25;
+        super(1,25,0.8);
     }
 
     @Override
     public String atacar() {
-        return super.atacar();
+        return "Aldeao " + super.atacar() ;
     }
 
     @Override
     public String mover() {
-        return super.mover();
+        return "Aldeao " + super.mover();
     }
 }
