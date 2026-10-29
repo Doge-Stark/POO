@@ -3,13 +3,13 @@
 # Atividades práticas da disciplina de Programação Orientada a Objetos.
 
 # Laboratórios
-[- Lab 01 - Sistema de controle de versão](lab-01)
+[- Lab 01 - Sistema de controle de versão](laboratorios/lab-01)
 
-[- Lab 02 - Prática Java](lab-02)
+[- Lab 02 - Prática Java](laboratorios/lab-02)
 
-[- Lab 03 - Construtores, modificadores de acesso, sobrecarga de métodos](lab-03)
+[- Lab 03 - Construtores, modificadores de acesso, sobrecarga de métodos](laboratorios/lab-03)
 
-[- Lab 04 - Coleções](lab-04)
+[- Lab 04 - Coleções](laboratorios/lab-04)
 
 
 # Aulas
