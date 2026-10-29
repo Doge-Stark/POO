@@ -1,6 +1,6 @@
 package engetelecom.poo.desenhos;
 
-public class Retangulo extends Forma{
+public class Retangulo extends Forma2D{
     private Coordenada vertice2;
 
 
@@ -13,7 +13,7 @@ public class Retangulo extends Forma{
       return (Math.abs((vertice2.getY() - inicio.getY())) * Math.abs((vertice2.getX() - inicio.getX())));
     }
 
-    public double calculaPerimetro(){
+    public double calcularPerimetro(){
         return (Math.abs((vertice2.getY() - inicio.getY())) + Math.abs((vertice2.getX() - inicio.getX())));
     }
 

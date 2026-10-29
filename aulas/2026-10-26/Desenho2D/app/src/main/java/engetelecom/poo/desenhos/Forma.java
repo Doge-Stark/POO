@@ -1,6 +1,6 @@
 package engetelecom.poo.desenhos;
 
-public class Forma {
+public abstract class Forma {
 
     protected String cor;
     protected Coordenada inicio;
@@ -10,9 +10,6 @@ public class Forma {
         this.inicio = inicio;
     }
 
-    public String desenhar(){
-
-        return "";
-    }
+    public abstract String desenhar();
 
 }

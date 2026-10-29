@@ -1,6 +1,6 @@
 package engetelecom.poo.desenhos;
 
-public class Linha extends  Forma{
+public class Linha extends Forma{
 
     private Coordenada fim;
 

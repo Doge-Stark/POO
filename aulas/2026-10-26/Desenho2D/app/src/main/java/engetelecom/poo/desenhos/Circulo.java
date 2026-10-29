@@ -1,6 +1,6 @@
 package engetelecom.poo.desenhos;
 
-public class Circulo extends Forma{
+public class Circulo extends Forma2D{
 
     int raio;
 
