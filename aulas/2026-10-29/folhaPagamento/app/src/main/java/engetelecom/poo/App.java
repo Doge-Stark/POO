@@ -3,12 +3,25 @@
  */
 package engetelecom.poo;
 
+import engetelecom.poo.superClasse.Funcionario;
+import engetelecom.poo.trabalhadores.Comissionado;
+import engetelecom.poo.trabalhadores.ComissionadoEfetivo;
+import engetelecom.poo.trabalhadores.Horista;
+import engetelecom.poo.trabalhadores.MensalistaFixo;
+
+import java.util.ArrayList;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        ArrayList<Funcionario> trabalhadores = new ArrayList<Funcionario>();
+
+        trabalhadores.add(new Comissionado("Cleber",0.2,20000));
+        trabalhadores.add(new ComissionadoEfetivo("João",0.2,20000,1800));
+        trabalhadores.add(new Horista("Lucas",20,180,20));
+        trabalhadores.add(new MensalistaFixo("Neide", 1700));
+
+        trabalhadores.forEach(f -> IO.println(f.calculaSalario()));
     }
 }
