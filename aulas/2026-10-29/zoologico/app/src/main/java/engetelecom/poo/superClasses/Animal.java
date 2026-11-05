@@ -9,4 +9,8 @@ public abstract class Animal {
     protected Animal() {
     }
 
+    @Override
+    public String toString() {
+    return "";
+    }
 }

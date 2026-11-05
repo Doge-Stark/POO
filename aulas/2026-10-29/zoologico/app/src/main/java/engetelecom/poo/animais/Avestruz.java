@@ -7,8 +7,8 @@ import engetelecom.poo.superClasses.Oviparo;
 public class Avestruz extends Oviparo implements Terrestre {
     public Avestruz(boolean possuiPenas, int idadeAnos, float pesoKg, String nome) {
         super(possuiPenas);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -31,5 +31,13 @@ public class Avestruz extends Oviparo implements Terrestre {
     public String esquartejar() {
 
         return "O avestruz " + nome + " esquartejou sua presa!";
+    }
+
+    @Override
+    public String toString() {
+        return "O avestrus " +
+                nome + " é um oviparo com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 }

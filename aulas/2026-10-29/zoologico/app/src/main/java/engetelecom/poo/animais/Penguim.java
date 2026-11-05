@@ -7,8 +7,8 @@ import engetelecom.poo.superClasses.Oviparo;
 public class Penguim extends Oviparo implements Terrestre, Aquatico {
     public Penguim(boolean possuiPenas, int idadeAnos, float pesoKg, String nome) {
         super(possuiPenas);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -35,6 +35,14 @@ public class Penguim extends Oviparo implements Terrestre, Aquatico {
 
     public String vigiarOvo() {
         return "O penguin" + nome + " está protegendo o Ovo!";
+    }
+
+    @Override
+    public String toString() {
+        return "O penguim " +
+                nome + " é um oviparo com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 
 }

@@ -7,8 +7,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Lobo extends Viviparo implements Terrestre {
     public Lobo(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -46,5 +46,13 @@ public class Lobo extends Viviparo implements Terrestre {
 
     public String uivar(){
         return "O lobo " + nome + " está uivando para a lua!";
+    }
+
+    @Override
+    public String toString() {
+        return "O lobo " +
+                nome + " é um mamifero com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 }

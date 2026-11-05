@@ -6,8 +6,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Cachorro extends Viviparo implements Terrestre {
     public Cachorro(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -45,5 +45,13 @@ public class Cachorro extends Viviparo implements Terrestre {
 
     public String farejar(){
         return "O cachorro " + nome + " está farejando algo!";
+    }
+
+    @Override
+    public String toString() {
+        return "O cachorro " +
+                nome + " é um mamifero com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 }

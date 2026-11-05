@@ -6,8 +6,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Baleia extends Viviparo implements Aquatico {
     public Baleia(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
     public String nadar() {
@@ -41,4 +41,11 @@ public class Baleia extends Viviparo implements Aquatico {
         return "A baleia " + nome + " começou a cantar!";
     }
 
+    @Override
+    public String toString() {
+        return "A Baleia " +
+                nome + " é um mamifero com " +
+                idade + " anos, " + peso + " kg.";
+
+    }
 }

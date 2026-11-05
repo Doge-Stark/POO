@@ -6,8 +6,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Gato extends Viviparo implements Terrestre {
     public Gato(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -46,4 +46,13 @@ public class Gato extends Viviparo implements Terrestre {
     public String arranhar(){
         return "O gato " + nome + " começou a arranhar!";
     }
+
+    @Override
+    public String toString() {
+        return "O gato " +
+                nome + " é um oviparo com " +
+                idade + " anos, " + peso + " kg.";
+
+    }
+
 }

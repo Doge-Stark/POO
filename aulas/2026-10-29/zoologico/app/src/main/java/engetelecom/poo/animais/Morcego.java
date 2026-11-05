@@ -7,8 +7,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Morcego extends Viviparo implements TerrestreAlado {
     public Morcego(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -48,5 +48,13 @@ public class Morcego extends Viviparo implements TerrestreAlado {
 
     public String dependurar() {
         return "O morcego " + nome + " está dependurado de cabeça para baixo!";
+    }
+
+    @Override
+    public String toString() {
+        return "O morcego " +
+                nome + " é um mamifero com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 }

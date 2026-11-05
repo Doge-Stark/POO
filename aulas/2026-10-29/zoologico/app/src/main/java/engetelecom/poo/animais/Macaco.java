@@ -8,8 +8,8 @@ import engetelecom.poo.superClasses.Viviparo;
 public class Macaco extends Viviparo implements Terrestre, Aquatico {
     public Macaco(int gestacaoMeses, int idadeAnos, float pesoKg, String nome) {
         super(gestacaoMeses);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -48,6 +48,14 @@ public class Macaco extends Viviparo implements Terrestre, Aquatico {
 
     public String escalar() {
         return "O macaco " + nome + " está escalando!";
+    }
+
+    @Override
+    public String toString() {
+        return "O macaco " +
+                nome + " é um mamifero com " +
+                idade + " anos, " + peso + " kg.";
+
     }
 
 

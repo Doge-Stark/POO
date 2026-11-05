@@ -4,18 +4,28 @@
 package engetelecom.poo;
 
 import engetelecom.poo.animais.*;
+import engetelecom.poo.superClasses.*;
+
+
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
 
-        Penguim clebin = new Penguim(true, 5, 10, "Clebin");
+        ArrayList<Animal> zoologico = new ArrayList<Animal>();
 
-        IO.println(clebin.andar());
-        IO.println(clebin.deslizar());
-        IO.println(clebin.nadar());
-        IO.println(clebin.botarOvo());
-        IO.println(clebin.vigiarOvo());
+        zoologico.add(new Ornitorrinco(false,5,10,"shelmy"));
+        zoologico.add(new Arara(true,3,1,"bobby"));
+        zoologico.add(new Penguim(true,4,8,"willy"));
+        zoologico.add(new Avestruz(true,11,50,"lester"));
+        zoologico.add(new Baleia(11,18,290,"lucy"));
+        zoologico.add(new Cachorro(3,6,10,"billy"));
+        zoologico.add(new Gato(2,5,4,"lily"));
+        zoologico.add(new Leao(4,8,30,"simba"));
+        zoologico.add(new Lobo(3,9,19,"chico"));
+        zoologico.add(new Macaco(5,19,27,"Mico"));
+        zoologico.add(new Morcego(6,4,1,"randy"));
 
-
+        zoologico.forEach(animal -> IO.println(animal.toString()));
     }
 }

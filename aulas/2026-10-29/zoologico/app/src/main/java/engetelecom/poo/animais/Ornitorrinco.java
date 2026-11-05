@@ -8,8 +8,8 @@ import engetelecom.poo.superClasses.Oviparo;
 public class Ornitorrinco extends Oviparo implements Mamifero, Aquatico, Terrestre {
     public Ornitorrinco(boolean possuiPenas, int idadeAnos, float pesoKg, String nome) {
         super(possuiPenas);
-        this.idade = idade;
-        this.peso = peso;
+        this.idade = idadeAnos;
+        this.peso = pesoKg;
         this.nome = nome;
     }
 
@@ -39,6 +39,14 @@ public class Ornitorrinco extends Oviparo implements Mamifero, Aquatico, Terrest
     public String amamentar() {
 
         return "O ornitorrinco " + nome + " está " + Mamifero.super.amamentar() + "!";
+
+    }
+
+    @Override
+    public String toString() {
+        return "O ornitorrinco " +
+                nome + " é um oviparo mamifero com " +
+                idade + " anos, " + peso + " kg.";
 
     }
 
