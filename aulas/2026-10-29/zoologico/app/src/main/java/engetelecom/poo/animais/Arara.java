@@ -16,12 +16,12 @@ public class Arara extends Oviparo implements TerrestreAlado {
 
     @Override
     public String voar() {
-        return "A arara " + nome + " começou a " + TerrestreAlado.super.voar() + "!";
+        return "A arara " + nome + " começou a voar!";
     }
 
     @Override
     public String andar() {
-        return "A arara " + nome + " começou a " + TerrestreAlado.super.andar() + "!";
+        return "A arara " + nome + " começou a andar!";
 
     }
 

@@ -15,7 +15,7 @@ public class Avestruz extends Oviparo implements Terrestre {
 
     @Override
     public String andar() {
-        return "O avestruz " + nome + " começou a " + andar() + "!";
+        return "O avestruz " + nome + " começou a andar!";
 
     }
 

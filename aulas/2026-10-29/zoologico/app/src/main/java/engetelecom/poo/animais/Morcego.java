@@ -14,12 +14,12 @@ public class Morcego extends Viviparo implements TerrestreAlado {
 
     @Override
     public String voar() {
-        return "O morcego " + nome + " começou a " + TerrestreAlado.super.voar() + "!";
+        return "O morcego " + nome + " começou a voar!";
     }
 
     @Override
     public String andar() {
-        return "O morcego " + nome + " começou a " + TerrestreAlado.super.andar() + "!";
+        return "O morcego " + nome + " começou a andar!";
 
     }
 
@@ -31,14 +31,14 @@ public class Morcego extends Viviparo implements TerrestreAlado {
     @Override
     public String mamar() {
 
-        return "O morcego " + nome + " está " + mamar() + "!";
+        return "O morcego " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O morcego " + nome + " está " + amamentar() + "!";
+        return "O morcego " + nome + " está amamentando!";
 
     }
 

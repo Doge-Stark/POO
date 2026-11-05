@@ -15,14 +15,14 @@ public class Lobo extends Viviparo implements Terrestre {
     @Override
     public String mamar() {
 
-        return "O lobo " + nome + " está " + mamar() + "!";
+        return "O lobo " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O lobo " + nome + " está " + amamentar() + "!";
+        return "O lobo " + nome + " está amamentando!";
     }
 
     @Override
@@ -31,12 +31,12 @@ public class Lobo extends Viviparo implements Terrestre {
     }
 
     public String nadar() {
-        return "O lobo " + nome + " começou a " + nadar() + "!";
+        return "O lobo " + nome + " começou a nadando!";
     }
 
     @Override
     public String andar() {
-        return "O lobo " + nome + " começou a " + andar() + "!";
+        return "O lobo " + nome + " começou a andar!";
 
     }
 

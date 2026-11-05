@@ -1,4 +1,8 @@
 ```mermaid 
+---
+    config:
+        layout: dagre
+---
 classDiagram
     direction TB
 

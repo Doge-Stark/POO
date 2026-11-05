@@ -14,14 +14,14 @@ public class Cachorro extends Viviparo implements Terrestre {
     @Override
     public String mamar() {
 
-        return "O cachorro " + nome + " está " + mamar() + "!";
+        return "O cachorro " + nome + " está a mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O cachorro " + nome + " está " + amamentar() + "!";
+        return "O cachorro " + nome + " está amamentando!";
     }
 
     @Override
@@ -30,12 +30,12 @@ public class Cachorro extends Viviparo implements Terrestre {
     }
 
     public String nadar() {
-        return "O cachorro " + nome + " começou a " + nadar() + "!";
+        return "O cachorro " + nome + " começou a nadando!";
     }
 
     @Override
     public String andar() {
-        return "O cachorro " + nome + " começou a " + andar() + "!";
+        return "O cachorro " + nome + " começou a andar!";
 
     }
 

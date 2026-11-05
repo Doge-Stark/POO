@@ -11,7 +11,7 @@ public class Baleia extends Viviparo implements Aquatico {
         this.nome = nome;
     }
     public String nadar() {
-        return "A baleia " + nome + " começou a " + nadar() + "!";
+        return "A baleia " + nome + " começou a nadar!";
     }
 
     @Override
@@ -22,14 +22,14 @@ public class Baleia extends Viviparo implements Aquatico {
     @Override
     public String mamar() {
 
-        return "A baleia " + nome + " está " + mamar() + "!";
+        return "A baleia " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "A baleia " + nome + " está " + amamentar() + "!";
+        return "A baleia " + nome + " está amamentar!";
 
     }
 

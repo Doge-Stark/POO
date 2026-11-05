@@ -14,12 +14,12 @@ public class Ornitorrinco extends Oviparo implements Mamifero, Aquatico, Terrest
     }
 
     public String nadar() {
-        return "O ornitorrinco " + nome + " começou a " + Aquatico.super.nadar() + "!";
+        return "O ornitorrinco " + nome + " começou a nadar!";
     }
 
     @Override
     public String andar() {
-        return "O ornitorrinco " + nome + " começou a " + Terrestre.super.andar() + "!";
+        return "O ornitorrinco " + nome + " começou a andar!";
 
     }
 
@@ -31,14 +31,14 @@ public class Ornitorrinco extends Oviparo implements Mamifero, Aquatico, Terrest
     @Override
     public String mamar() {
 
-        return "O ornitorrinco " + nome + " está " + Mamifero.super.mamar() + "!";
+        return "O ornitorrinco " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O ornitorrinco " + nome + " está " + Mamifero.super.amamentar() + "!";
+        return "O ornitorrinco " + nome + " está amamentando!";
 
     }
 

@@ -14,12 +14,12 @@ public class Penguim extends Oviparo implements Terrestre, Aquatico {
 
 
     public String nadar() {
-        return "O penguim " + nome + " começou a " + Aquatico.super.nadar() + "!";
+        return "O penguim " + nome + " começou a nadar!";
     }
 
     @Override
     public String andar() {
-        return "O penguim " + nome + " começou a " + Terrestre.super.andar() + "!";
+        return "O penguim " + nome + " começou a andar!";
 
     }
 

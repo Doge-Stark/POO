@@ -13,14 +13,14 @@ public class Leao extends Viviparo implements Terrestre {
 
     public String mamar() {
 
-        return "O leão " + nome + " está " + mamar() + "!";
+        return "O leão " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O leão " + nome + " está " + amamentar() + "!";
+        return "O leão " + nome + " está amamentando!";
     }
 
     @Override
@@ -29,12 +29,12 @@ public class Leao extends Viviparo implements Terrestre {
     }
 
     public String nadar() {
-        return "O leão " + nome + " começou a " + nadar() + "!";
+        return "O leão " + nome + " começou a nadando!";
     }
 
     @Override
     public String andar() {
-        return "O leão " + nome + " começou a " + andar() + "!";
+        return "O leão " + nome + " começou a andar!";
 
     }
 

@@ -17,14 +17,14 @@ public class Macaco extends Viviparo implements Terrestre, Aquatico {
     @Override
     public String mamar() {
 
-        return "O macaco " + nome + " está " + mamar() + "!";
+        return "O macaco " + nome + " está mamando!";
 
     }
 
     @Override
     public String amamentar() {
 
-        return "O macaco " + nome + " está " + amamentar() + "!";
+        return "O macaco " + nome + " está amamentando!";
     }
 
     @Override
@@ -33,12 +33,12 @@ public class Macaco extends Viviparo implements Terrestre, Aquatico {
     }
 
     public String nadar() {
-        return "O macaco " + nome + " começou a " + Aquatico.super.nadar() + "!";
+        return "O macaco " + nome + " começou a nadar!";
     }
 
     @Override
     public String andar() {
-        return "O macaco " + nome + " começou a " + Terrestre.super.andar() + "!";
+        return "O macaco " + nome + " começou a andar!";
 
     }
 
