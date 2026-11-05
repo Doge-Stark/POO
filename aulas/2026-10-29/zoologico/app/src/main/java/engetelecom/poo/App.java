@@ -3,12 +3,19 @@
  */
 package engetelecom.poo;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import engetelecom.poo.animais.*;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Penguim clebin = new Penguim(true, 5, 10, "Clebin");
+
+        IO.println(clebin.andar());
+        IO.println(clebin.deslizar());
+        IO.println(clebin.nadar());
+        IO.println(clebin.botarOvo());
+        IO.println(clebin.vigiarOvo());
+
+
     }
 }
